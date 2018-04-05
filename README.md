@@ -1,20 +1,17 @@
-# SiaPy
+# Essentia-Sia-API
 
-Sia API bindings for Python 3
+API bindings for [Sia decentrilized storage](http://sia.tech/).
+Provides easy to use object-property syntax.
 
-This is a WIP
+## Installation
 
-## Dependancies
-
-[requests](https://github.com/kennethreitz/requests)
-
-`pip install requests`
+`pip install essentia-sia-api`
 
 ## Example usage
 
 ```python
-from sia import Sia
+from sia.sia import Sia
 
 sia = Sia()
-print(sia.get_version())
+sia.daemon.get_version()
 ```
