@@ -1,7 +1,6 @@
 """
 Host API.
 """
-
 from sia.constants import host as host_constants
 from sia.mixins.http import Http
 
@@ -10,6 +9,7 @@ class Host:
     """
     Implement host-API for Sia storage.
     """
+
     def __init__(self):
         self.http = Http()
 
