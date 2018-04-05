@@ -9,6 +9,7 @@ class Miner:
     """
     Miner API.
     """
+
     def __init__(self):
         self.http = Http()
 

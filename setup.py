@@ -18,7 +18,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
-        'requests>=2.18.4',
+        'requests<=2.18.4',
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',

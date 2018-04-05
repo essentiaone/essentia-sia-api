@@ -9,6 +9,7 @@ class Daemon:
     """
     Implement daemon-API for Sia storage.
     """
+
     def __init__(self):
         self.http = Http()
 

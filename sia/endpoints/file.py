@@ -9,6 +9,7 @@ class File:
     """
     Implement file-API for Sia storage.
     """
+
     def __init__(self):
         self.http = Http()
 
