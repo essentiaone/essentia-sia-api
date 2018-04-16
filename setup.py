@@ -3,14 +3,14 @@ try:
 except ImportError:
     from distutils.core import setup
 
-from sia import __version__, __authors__, __emails__
+from sia import __version__, __authors__, __email__
 
 
 setup(
     name='essentia-sia-api',
     version=__version__,
     author=__authors__,
-    author_email=__emails__,
+    author_email=__email__,
     url='https://github.com/essentiaone/essentia-sia-api',
     description='Sia API wrapper written in Python.',
     download_url='https://github.com/essentiaone/essentia-sia-api/archive/master.zip',
