@@ -46,7 +46,7 @@ class HttpMixinToDeprecate:
         Helper HTTP POST request function.
         Sends HTTP POST request to given path with given payload.
         """
-        url = self.address + ':' + str(self.port) + path
+        url = str(self.address) + ':' + str(self.port) + path
         resp = requests.post(url, headers=self.headers, data=data)
         try:
             resp.raise_for_status()
@@ -69,8 +69,8 @@ class Http:
 
     @staticmethod
     def post(path, data=None):  # pylint: disable=missing-docstring
-        return HttpMixinToDeprecate.http_post(path, data)
+        return HttpMixinToDeprecate().http_post(path, data)
 
     @staticmethod
     def get_bytes(path, data=None):  # pylint: disable=missing-docstring
-        return HttpMixinToDeprecate.http_get_bytes(path, data)
+        return HttpMixinToDeprecate().http_get_bytes(path, data)
