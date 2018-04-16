@@ -1,7 +1,4 @@
-try:
-    from setuptools import setup, find_packages
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup
 
 from sia import __version__, __authors__, __emails__
 
